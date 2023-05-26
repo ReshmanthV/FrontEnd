@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Navigation Task</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="message.js"></script>
 </head>
-<div class="nav">
-    <nav>
-        <img src="image.jpg" alt="image">
-        <ul>
-            <li><a href="#home">Dashboard</a></li>
-            <li><a href="#about">User List</a></li>
-            <li><a href="#projects">User</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+
 <body>
-    
+    <header>
+        <img src="./company-logo.png" alt="kl">
+        <label class="drop-down">
+                <select name="user type" class="label-text">
+                    <!-- <option value="none"></option> -->
+                    <option value="name">User Name</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="Logout">Logout</option>
+                </select>
+        </label>
+    </header>
+    <div class="nav">
+        <nav>
+            <div class="nav_container">
+                <div class="nav_item" onclick="link_page('Dashboard.html')">Dashboard</div>
+                <div class="nav_item" onclick="link_page('User_Details.html')">User Details</div>
+                <div class="nav_item" onclick="link_page('User_List.html')">User List</div>
+                <div class="nav_item" onclick="link_page('User_Setup.html')">User Setup</div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="info_container">
+            <h1>Hello!...</h1>
+            <div class="personal_info">
+                <p>Welcome to my new webpage.</p>
+            </div>
+        </div>
+        <img src="./image-removebg-preview.png" alt="image">
+        <!-- <img src="image.jpg" alt="image"> -->
+    </div>
 </body>
+
 </html>
