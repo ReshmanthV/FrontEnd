@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Dashboard</title>
-    <script type="text/javascript" src="message.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="message.js">
+        setInterval(updateTime, 1000);
+    </script>
 </head>
+
 <body>
-    <script>dashboard();</script>
-    <!-- <button onclick="dashboard()"> Dashboard </button> -->
+    <header>
+        <img src="./company-logo.png" alt="kl">
+    </header>
+    <div class="nav">
+        <nav>
+            <div class="nav_container">
+                <a href="Dashboard.html" class = "nav_item"><button>Dashboard</button></a>
+                <a href="User_Details.html" class = "nav_item"><button>User Details</button></a>
+                <a href="User_List.html" class = "nav_item"><button>User List</button></a>
+                <a href="User_Setup.html" class = "nav_item"><button>User Setup</button></a>
+            </div>
+        </nav>
+    </div>
+    <h2><script>dashboard()</script></h2>
+    <div class="clock_container">
+        <h3>Present Time</h3>
+        <div id="clock">
+            <script>update_time();</script>
+        </div>
+        <img src="clock.png" alt="clock">
+    </div>
+    </div>
 </body>
 </html>
