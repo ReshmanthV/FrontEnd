@@ -42,7 +42,6 @@ function user_list() {
 }
 
 function user_setup() {
-    document.write("User Setup!!");
     document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -57,23 +56,23 @@ function user_setup() {
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('password').value = '';
+
+        alert("Successfully Created!!")
     });
 }
 
 function update_time() {
-    var now = new Date(); // Get current date and time
+    var now = new Date();
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
 
-    // Format the time to ensure two digits for hours, minutes, and seconds
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
     var timeString = hours + ":" + minutes + ":" + seconds;
 
-    // Update the clock element on the page with the current time
     document.getElementById("clock").textContent = timeString;
 }
 
