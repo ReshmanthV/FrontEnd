@@ -23,6 +23,10 @@ nav {
     padding-top: 12px;
 }
 
+.nav_item :focus{
+    background-color: aquamarine;
+}
+
 .nav_item button {
     cursor: pointer;
     background-color: transparent;

@@ -57,8 +57,8 @@ function user_setup() {
         document.getElementById('email').value = '';
         document.getElementById('password').value = '';
 
-        alert("Successfully Created!!")
     });
+    alert("Successfully Created!!")
 }
 
 function update_time() {
