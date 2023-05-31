@@ -125,18 +125,17 @@ h2 {
     font-family: 'Nunito', sans-serif;
 }
 
-
-.user-setup {
-    align-items: center;
+.login_container{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin-left: 28%;
+    margin-left: 32%;
     width: 400px;
     padding: 80px;
     padding-top: 60px;
     background-color: transparent;
     box-shadow: 0 0 10px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 input[type="text"],
@@ -148,8 +147,19 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    width: 100%;
+    width: 103%;
     padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.login_container button {
+    width: 103%;
+    padding: 10px;
+    margin-top: 8px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
