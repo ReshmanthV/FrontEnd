@@ -1,4 +1,3 @@
-
 function link_page(e, sectionId) {
     e.preventDefault();
     window.open(sectionId, "_parent");
@@ -77,14 +76,3 @@ function update_time() {
 
     document.getElementById("clock").textContent = timeString;
 }
-
-function loginHandler() {
-    let setupContainer = document.getElementById("setup_container")
-    let loginContainer = document.getElementById("login_container")
-
-    setupContainer.style.display = "none";
-    loginContainer.style.display = "flex"
-}
-
-
-
